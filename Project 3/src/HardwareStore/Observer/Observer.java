@@ -1,10 +1,9 @@
-package HardwareStore.Observer;
-import java.io.IOException;
-import java.util.ArrayList;
+package Observer;
 import HardwareStore.HardwareStore;
-import HardwareStore.Customers.RentalRecord;
+import HardwareStore.RentalRecord;
 
 public interface Observer {
-    void update(int day) throws IOException;
+    
+	void update(RentalRecord record,boolean endOfSim);
 
 }
